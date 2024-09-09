@@ -24,15 +24,13 @@
     "upgrade-browsers": "yarn up browserslist caniuse-lite --recursive",
     "upgrade-contracts": "yarn up @synthetixio/v3-contracts --recursive",
     "svg": "svgo --config svgo.config.js --recursive ./",
-    "svg:check": "yarn svg && git diff --exit-code **/*.svg",
-    "download-cci-coverage": "download-cci-coverage"
+    "svg:check": "yarn svg && git diff --exit-code **/*.svg"
   },
   "devDependencies": {
     "@babel/core": "^7.24.6",
     "@babel/preset-env": "^7.24.6",
     "@babel/preset-typescript": "^7.24.6",
     "@synthetixio/deps": "workspace:*",
-    "@synthetixio/download-cci-coverage": "workspace:*",
     "@tanstack/eslint-plugin-query": "^5.8.3",
     "@types/jest": "^29.5.8",
     "@typescript-eslint/eslint-plugin": "^6.11.0",

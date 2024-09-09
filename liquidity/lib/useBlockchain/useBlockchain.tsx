@@ -1,20 +1,19 @@
-import { ethers } from 'ethers';
-import React, { useMemo } from 'react';
+import { IconProps } from '@chakra-ui/react';
+import { INFURA_KEY as DEFAULT_INFURA_KEY } from '@snx-v3/constants';
 import {
+  ArbitrumIcon,
   BaseIcon,
   EthereumIcon,
   FailedIcon,
   LogoIcon,
   OptimismIcon,
-  ArbitrumIcon,
   SNXChainIcon,
 } from '@snx-v3/icons';
-import { INFURA_KEY as DEFAULT_INFURA_KEY } from '@snx-v3/constants';
+import { useConnectWallet, useSetChain } from '@web3-onboard/react';
+import { ethers } from 'ethers';
+import React, { useCallback, useMemo } from 'react';
 import SynthetixIcon from './SynthetixIcon.svg';
 import SynthetixLogo from './SynthetixLogo.svg';
-import { useConnectWallet, useSetChain } from '@web3-onboard/react';
-import { useCallback } from 'react';
-import { IconProps } from '@chakra-ui/react';
 
 export type Network = {
   id: number;
